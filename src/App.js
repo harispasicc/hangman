@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import axios from "axios";
 import Figure from "./components/Figure";
 import Header from "./components/Header";
 import Popup from "./components/Popup";
@@ -6,16 +7,6 @@ import Word from "./components/Word";
 import WrongLetters from "./components/WrongLetters";
 import Notification from "./components/Notification";
 import show from "./helpers/helpers";
-import axios from "axios";
-
-// const words = axios.get("https://random-words-api.vercel.app/word");
-// const words = "https://random-words-api.vercel.app/word";
-// const randomWord = () => {
-//   axios.get("https://random-words-api.vercel.app/word").then(response => {
-//     setWord(response.data[0].word.toLowerCase());
-//   });
-// };
-// let selectedWord = words[Math.floor(Math.random() * words.length)];
 
 function App() {
   const [word, setWord] = useState("");
@@ -64,8 +55,6 @@ function App() {
     setCorrectLetters([]);
     setWrongLetters([]);
     selectedWord();
-    // const random = Math.floor(Math.random() * words.length);
-    // selectedWord = words[random];
   }
 
   return (

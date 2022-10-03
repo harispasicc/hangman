@@ -1,3 +1,28 @@
+Hangman
+
+Project description:
+
+Hangman is designed for personal computer users who enjoy simple solitaire word games, Hangman is purely recreational software with little or no utilitarian value The user is assumed to be competent using a WIMP interface (windows, icons, menus, pointers) to operate simple computer games such as Minesweeper or Klondike Solitaire. The user is assumed to be familiar with the rules of Hangman.
+
+Project features:
+
+-Figure.js: hangman figure,
+-Header.js: header of the game,
+-Notification.js: for repetitive letter,
+-Popup.js: popup modal/win or lose message,
+-Word.js: maping through state a checking correct letters,
+-WrongLetters.js: checking for wrong letters,
+-helpers.js: win/lose logic,
+-App.js: main logic for random words and checking if letter is correct or not,
+-index.css: style of the project
+
+Built with:
+
+-HTML
+-CSS
+-JS
+-ReactJS
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

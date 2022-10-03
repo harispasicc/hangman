@@ -8,14 +8,12 @@ export default function show(setter) {
 export function checkWin(correct, wrong, word) {
   let status = "win";
 
-  //check for win
   word.split("").forEach(letter => {
     if (!correct.includes(letter)) {
       status = "";
     }
   });
 
-  //check for lost
   if (wrong.length === 6) status = "lose";
   return status;
 }
